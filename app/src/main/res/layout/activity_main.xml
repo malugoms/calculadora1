@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+
+        android:background="@drawable/background">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="149dp"
+        android:layout_height="46dp"
+        android:rotationX="-8"
+        android:text="login"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#0B0306"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="174dp"
+        tools:layout_editor_absoluteY="276dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="132dp"
+        android:layout_height="35dp"
+        android:background="#673AB7"
+        android:text="entrar"
+        android:textColor="#E3D0D6"
+        android:textColorHighlight="#E91E63"
+        android:textColorLink="#E6155C"
+        app:backgroundTintMode="add"
+        tools:layout_editor_absoluteX="263dp"
+        tools:layout_editor_absoluteY="680dp" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="193dp" />
+
+    <EditText
+        android:layout_width="333dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="inserir"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="322dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:text="senha"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="384dp" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="328dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="inserir"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="426dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textColor="#E80451"
+        android:textColorLink="#ff06cc"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="157dp"
+        tools:layout_editor_absoluteY="67dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="320dp"
+        android:layout_height="41dp"
+        android:background="#673AB7"
+        android:text="esqueci minha senha"
+        android:textColor="#E6DDE0"
+        android:textColorHighlight="#E91E63"
+        app:backgroundTintMode="add"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="490dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="235dp"
+        android:layout_height="111dp"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="134dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
