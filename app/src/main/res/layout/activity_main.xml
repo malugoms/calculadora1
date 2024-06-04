@@ -10,16 +10,6 @@
     tools:context=".MainActivity">
 
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="167dp"
-        android:layout_height="130dp"
-        android:tint="#72CCF4"
-        app:srcCompat="@android:mipmap/sym_def_app_icon"
-        tools:layout_editor_absoluteX="122dp"
-        tools:layout_editor_absoluteY="202dp"
-        tools:srcCompat="@drawable/baseline_local_grocery_store_24" />
-
     <Space
         android:id="@+id/space"
         android:layout_width="wrap_content"
@@ -30,99 +20,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
-        android:fontFamily="@font/alice"
-        android:text="INSIRA SEUS DADOS"
-        android:textColor="#AAD2F3"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="@+id/space"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.556"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="364dp"
-        android:layout_height="51dp"
-        android:background="#0000cc"
-        android:text="LOGIN"
-        android:textColorHighlight="#3F51B5"
-        android:textColorLink="#2196F3"
-        app:backgroundTintMode="multiply"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="804dp" />
-
     <Button
         android:id="@+id/button2"
-        android:layout_width="361dp"
-        android:layout_height="50dp"
-        android:background="#0000cc"
-        android:text="RECUPERAR SENHA"
-        app:backgroundTintMode="multiply"
-        app:rippleColor="#A33232"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="740dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="125dp"
-        android:layout_height="30dp"
-        android:text="E-MAIL"
-        android:textColor="#F4F4F2"
-        android:textColorHighlight="#CEBBD1"
-        android:textColorLink="#3F51B5"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="375dp" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="311dp"
-        android:layout_height="30dp"
-        android:text="inserir"
-        android:textSize="12sp"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="420dp" />
-
-    <TextView
-        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SENHA"
-        android:textColor="#F4F4F3"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="488dp" />
+        android:text="Button"
+        tools:layout_editor_absoluteX="362dp"
+        tools:layout_editor_absoluteY="696dp" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="311dp"
-        android:layout_height="33dp"
-        android:text="inserir"
-        android:textSize="12sp"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="531dp" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TELEFONE"
-        android:textColor="#F0EFF1"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="598dp" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="309dp"
-        android:layout_height="35dp"
-        android:text="inserir"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="639dp" />
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="475dp"
+        android:layout_height="1092dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/capa_de_livro_di_rio_de_ideias_colagem_bege_e_preto_" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
