@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "422169359468",
+    "project_id": "projetobancod-8b6a9",
+    "storage_bucket": "projetobancod-8b6a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:422169359468:android:6e14568110f8532f865449",
+        "android_client_info": {
+          "package_name": "com.example.calculadora"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBbWwyaH8qftdke4dgHc_3xCMve3JNamc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

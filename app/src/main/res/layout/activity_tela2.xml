@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:scrollbarThumbHorizontal="@drawable/background"
+    android:scrollbarThumbVertical="@drawable/background"
+    tools:context=".tela2">
+
+    <Button
+        android:id="@+id/meu_botao"
+        android:layout_width="213dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="784dp"
+        android:background="#0000cc"
+        android:onClick="Teladois"
+        android:shadowColor="#AFC6B0"
+        android:text="Clique aqui"
+        android:textColorHighlight="#EFCA59"
+        android:textColorLink="#E31313"
+        app:backgroundTintMode="multiply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#BA5B5B" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="375dp"
+        android:layout_height="79dp"
+        android:text="Parabéns!!"
+        android:textColor="#EAEFEA"
+        android:textSize="60sp"
+        app:autoSizeTextType="uniform"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="181dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="332dp"
+        android:layout_height="82dp"
+        android:autoText="false"
+        android:text="O seu cadastro foi realizado com sucesso"
+        android:textColor="#6EB0E4"
+        android:textSize="20sp"
+        app:autoSizeTextType="none"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="548dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="268dp"
+        android:layout_height="198dp"
+        android:tint="#74B4E6"
+        app:srcCompat="@android:drawable/ic_menu_mapmode"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="300dp"
+        tools:srcCompat="@drawable/baseline_local_grocery_store_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
