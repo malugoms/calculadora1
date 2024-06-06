@@ -20,25 +20,60 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="490dp"
+        android:layout_height="1023dp"
+        android:onClick="Tela3"
+        android:src="@tools:sample/avatars"
+        tools:layout_editor_absoluteX="-40dp"
+        tools:layout_editor_absoluteY="-2dp"
+        tools:srcCompat="@drawable/capa_de_livro_di_rio_de_ideias_colagem_bege_e_preto___1_" />
+
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/entrar"
+        android:layout_width="189dp"
+        android:layout_height="47dp"
+        android:drawableRight="@drawable/ic_arrow"
+        android:enabled="true"
+        android:onClick="activity_tela3"
+        android:text="@string/entrar"
+        tools:layout_editor_absoluteX="206dp"
+        tools:layout_editor_absoluteY="583dp" />
+
+    <Button
+        android:id="@+id/mudar_senha"
+        android:layout_width="192dp"
+        android:layout_height="47dp"
+        android:drawableRight="@drawable/ic_arrow"
+        android:onClick="Recuperar"
+        android:text="@string/mudar_senha"
+        tools:layout_editor_absoluteX="203dp"
+        tools:layout_editor_absoluteY="642dp" />
+
+    <TextView
+        android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="362dp"
-        tools:layout_editor_absoluteY="696dp" />
+        android:text="TextView"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="312dp" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="475dp"
-        android:layout_height="1092dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/capa_de_livro_di_rio_de_ideias_colagem_bege_e_preto_" />
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="404dp" />
+
+    <TextView
+        android:id="@+id/telefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="497dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

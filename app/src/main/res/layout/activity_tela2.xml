@@ -7,4 +7,37 @@
     android:background="@drawable/background"
     android:scrollbarThumbHorizontal="@drawable/background"
     android:scrollbarThumbVertical="@drawable/background"
-    tools:context=".tela2"/>
+    tools:context=".tela2">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="577dp"
+        android:layout_height="1062dp"
+        app:srcCompat="@drawable/capa_de_livro_di_rio_de_ideias_colagem_bege_e_preto___3_"
+        tools:layout_editor_absoluteX="-83dp"
+        tools:layout_editor_absoluteY="-71dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="224dp"
+        android:layout_height="26dp"
+        android:text="mercadinho@gmail.com"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="333dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="224dp"
+        android:layout_height="26dp"
+        android:text="123456789"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="602dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="224dp"
+        android:layout_height="26dp"
+        android:text="123456789"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="464dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

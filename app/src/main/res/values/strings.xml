@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">calculadora</string>
+    <string name="entrar">ENTRAR</string>
+    <string name="mudar_senha">MUDAR SENHA</string>
 </resources>
