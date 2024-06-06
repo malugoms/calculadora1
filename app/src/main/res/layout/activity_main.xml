@@ -32,14 +32,13 @@
 
     <Button
         android:id="@+id/entrar"
-        android:layout_width="189dp"
+        android:layout_width="192dp"
         android:layout_height="47dp"
         android:drawableRight="@drawable/ic_arrow"
-        android:enabled="true"
-        android:onClick="activity_tela3"
+        android:onClick="login"
         android:text="@string/entrar"
-        tools:layout_editor_absoluteX="206dp"
-        tools:layout_editor_absoluteY="583dp" />
+        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteY="588dp" />
 
     <Button
         android:id="@+id/mudar_senha"
@@ -60,7 +59,7 @@
         tools:layout_editor_absoluteY="312dp" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/senha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"

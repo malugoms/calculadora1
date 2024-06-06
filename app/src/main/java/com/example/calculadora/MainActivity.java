@@ -1,17 +1,15 @@
 package com.example.calculadora;
 
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-
-import android.annotation.SuppressLint;
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -19,46 +17,18 @@ import com.google.android.gms.tasks.Task;
 
 public class MainActivity extends AppCompatActivity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        Button button = findViewById(R.id.entrar);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, tela3.class);
-                startActivity(intent);
-                    }
-
-            public void Tela3(View view) {
-                Intent in = new Intent(MainActivity.this, Tela3().class);
-                startActivity(in);
-            }
-
-        });
-            }
-        }
-public class MainActivity extends AppCompatActivity {
-
     Usuario usuario; // Objeto Usuario que armazena as informações do usuário
     FirebaseAuth autenticacao; // Objeto FirebaseAuth para autenticação com Firebase
     EditText campoNome, campoEmail, camposSnha; // Campos de entrada para nome, email e senha
     Button botaoCadastrar; // Botão para acionar o cadastro
 
-    public void Recuperar(View view){
-        Intent in = new Intent(MainActivity.this, tela2.class);
-        startActivity(in);
-    }
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Compiler EdgeToEdge = null;
-        EdgeToEdge.enable(); // Habilita layout de borda a borda
+        EdgeToEdge.enable(this); // Habilita layout de borda a borda
         setContentView(R.layout.activity_main); // Define o layout da atividade
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.), (v, insets) -> {
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.leo), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom); // Ajusta o padding para suportar áreas de recorte da tela
             inicializar(); // Inicializa os elementos da interface
@@ -68,9 +38,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // Inicializa os elementos da interface com seus respectivos IDs
-    @SuppressLint("WrongViewCast")
     public void inicializar() {
-        View campotelefone = findViewById(R.id.email);
+        campoNome = findViewById(R.id.editTextNome);
         campoEmail = findViewById(R.id.TextLogin);
         camposSnha = findViewById(R.id.textSenha);
         botaoCadastrar = findViewById(R.id.buttonCadastrar);
@@ -95,20 +64,19 @@ public class MainActivity extends AppCompatActivity {
                     cadastrarUsuario();
 
                 } else {
-                    Toast.makeText(this, "Preencha a senha", Toast.LENGTH_SHORT).show(); 
+                    Toast.makeText(this, "Preencha a senha", Toast.LENGTH_SHORT).show(); // Exibe mensagem se o campo senha estiver vazio
                 }
             } else {
-                Toast.makeText(this, "Preencha o email", Toast.LENGTH_SHORT).show(); 
+                Toast.makeText(this, "Preencha o email", Toast.LENGTH_SHORT).show(); // Exibe mensagem se o campo email estiver vazio
             }
         } else {
-            Toast.makeText(this, "Preencha o nome", Toast.LENGTH_SHORT).show(); 
+            Toast.makeText(this, "Preencha o nome", Toast.LENGTH_SHORT).show(); // Exibe mensagem se o campo nome estiver vazio
         }
     }
 
     // Método para cadastrar o usuário utilizando Firebase Authentication
     private void cadastrarUsuario() {
-        Object ConfiguraBd = null;
-        autenticacao = ConfiguraBd.Fireautenticacao(); 
+        autenticacao = ConfiguraBd.Fireautenticacao(); // Obtém instância de autenticação do Firebase
 
         autenticacao.createUserWithEmailAndPassword(
                 usuario.getEmail(), usuario.getPass()
@@ -116,9 +84,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
-                    Toast.makeText(MainActivity.this, "Sucesso ao Cadastrar o usuario", Toast.LENGTH_SHORT).show(); 
+                    Toast.makeText(MainActivity.this, "Sucesso ao Cadastrar o usuario", Toast.LENGTH_SHORT).show(); // Exibe mensagem de sucesso
                 }else{
-                    Toast.makeText(MainActivity.this, "Deu ruim!", Toast.LENGTH_SHORT).show(); 
+                    Toast.makeText(MainActivity.this, "Deu ruim!", Toast.LENGTH_SHORT).show(); // Exibe mensagem de erro
                 }
             }
         });
